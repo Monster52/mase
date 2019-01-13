@@ -4,6 +4,7 @@ jobs:
     working_directory: ~/mase
     docker:
       - image: circleci/ruby:2.4.1
+      BUNDLER_VERSION: 2.0.1
         environment:
           PGHOST: localhost
           PGUSER: mase
