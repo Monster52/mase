@@ -3,7 +3,7 @@ jobs:
   build:
     working_directory: ~/mase
     docker:
-      - image: circleci/ruby:2.4.1
+      - image: circleci/ruby:2.6.0
         environment:
             BUNDLER_VERSION: 2.0.1
             PGHOST: localhost
