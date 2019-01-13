@@ -4,16 +4,16 @@ jobs:
     working_directory: ~/mase
     docker:
       - image: circleci/ruby:2.4.1
-      BUNDLER_VERSION: 2.0.1
         environment:
-          PGHOST: localhost
-          PGUSER: mase
-          RAILS_ENV: test
+            BUNDLER_VERSION: 2.0.1
+            PGHOST: localhost
+            PGUSER: mase
+            RAILS_ENV: test
       - image: postgres:9.5
         environment:
-          POSTGRES_USER: mase
-          POSTGRES_DB: mase_test
-          POSTGRES_PASSWORD: ""
+            POSTGRES_USER: mase
+            POSTGRES_DB: mase_test
+            POSTGRES_PASSWORD: ""
     steps:
       - checkout
 
