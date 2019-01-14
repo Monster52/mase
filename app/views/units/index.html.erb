@@ -1,0 +1,10 @@
+<h1><%= current_user.username ? current_user.username : current_user.email %> </h1>
+
+<h4>Your Units</h4>
+<ul>
+  <% @units.each do |unit| %>
+    <li><%= link_to unit.unit_name, unit_path(unit)  %></li>
+  <% end %>
+</ul>
+
+<small><%= link_to "Create new Unit", new_unit_path %></small>
